@@ -48,7 +48,7 @@ export default function Hero() {
             </p>
           </FadeIn>
 
-          {/* CTA Buttons */}
+          
           <FadeIn delay={0.8}>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
               <motion.button
@@ -75,81 +75,9 @@ export default function Hero() {
             </div>
           </FadeIn>
 
-          {/* Social Proof */}
-          <FadeIn delay={1.0}>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-12 text-gray-400">
-              <div className="flex items-center space-x-2">
-                <div className="flex items-center">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={16} className="text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <span className="text-sm">5.0 rating</span>
-              </div>
-              
-              <div className="flex items-center space-x-2">
-                <Users size={16} />
-                <span className="text-sm">10,000+ developers</span>
-              </div>
-              
-              <div className="flex items-center space-x-2">
-                <Trophy size={16} className="text-yellow-400" />
-                <span className="text-sm">FAANG offers secured</span>
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* Scroll Indicator */}
-          <FadeIn delay={1.2}>
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-            >
-              <div className="w-6 h-10 border-2 border-gray-600 rounded-full flex justify-center">
-                <div className="w-1 h-3 bg-gradient-to-b from-purple-400 to-blue-400 rounded-full mt-2" />
-              </div>
-            </motion.div>
-          </FadeIn>
+          
         </div>
-
-        {/* Feature Highlights */}
-        <FadeIn delay={1.4}>
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              whileHover={{ y: -5 }}
-              className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center"
-            >
-              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold">🔒</span>
-              </div>
-              <h3 className="text-white font-semibold mb-2">100% Undetectable</h3>
-              <p className="text-gray-400 text-sm">Invisible to screen-share, never steals focus, completely stealth</p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ y: -5 }}
-              className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center"
-            >
-              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold">⚡</span>
-              </div>
-              <h3 className="text-white font-semibold mb-2">Real-time Help</h3>
-              <p className="text-gray-400 text-sm">Instant solutions and debugging for any coding question</p>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ y: -5 }}
-              className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-center"
-            >
-              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold">🎯</span>
-              </div>
-              <h3 className="text-white font-semibold mb-2">Interview Ready</h3>
-              <p className="text-gray-400 text-sm">Designed specifically for technical interview success</p>
-            </motion.div>
-          </div>
-        </FadeIn>
+        
       </div>
     </section>
   );
